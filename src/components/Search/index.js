@@ -1,20 +1,20 @@
 // Interation 5 Implement search bar
 
-import { Divider, Input } from 'antd';
+import { Divider } from 'antd';
 
-function Search({ search, setSearch}) {
-    function handleChange(e) {
-        setSearch(e.target.value);
-    }
+function Search({ search, setSearch }) {
+  function handleChange(e) {
+    setSearch(e.target.value);
+  }
 
-    return(
-        <>
-            <Divider>Search</Divider>
+  return (
+    <>
+      <Divider>Search</Divider>
 
-            <label>Search</label>
-            <input value={search} type="text" onChange={handleChange} />
-        </>
-    );
+      <label>Search</label>
+      <input value={search} type="text" onChange={handleChange} />
+    </>
+  );
 }
 
-export default Search
+export default Search;
